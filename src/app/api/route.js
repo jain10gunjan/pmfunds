@@ -2,7 +2,11 @@ import axios from "axios";
 import { parse } from "node-html-parser";
 
 // Main function to handle the API request
-export async function GET(request) {
+export async function GET(request, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Or specify the origin if needed
+  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
   const url = new URL(request.url);
   const targetParam = decodeURIComponent(url.searchParams.get("url"));
 
