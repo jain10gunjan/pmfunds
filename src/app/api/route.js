@@ -26,7 +26,7 @@ export async function GET(request) {
 
   // Array to store results from each URL fetch
   const results = await Promise.all(
-    urls.map(async (url, index) => {
+    urls.map(async (url) => {
       try {
         // Add headers to simulate a browser request
         const response = await axios.get(url, {
