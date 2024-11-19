@@ -87,7 +87,7 @@ async function fetchArticleContent(articleUrl) {
 }
 
 // Define API route
-export async function GET(req) {
+export async function GET() {
   try {
     const result = await fetchSitemap();
     return new Response(JSON.stringify(result), {
