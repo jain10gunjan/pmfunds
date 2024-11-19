@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "jsdom": "^25.0.1",
     "next": "15.0.3",
     "node-html-parser": "^6.1.13",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@types/node": "^20",
